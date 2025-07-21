@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="SshConfigs">
+    <configs>
+      <sshConfig authType="PASSWORD" host="147.45.154.73" id="6033d74f-3123-4a16-a9ec-bce95f4b1ae3" port="22" customName="remote-portal" nameFormat="CUSTOM" username="root" useOpenSSHConfig="true">
+        <option name="customName" value="remote-portal" />
+      </sshConfig>
+    </configs>
+  </component>
+</project>
