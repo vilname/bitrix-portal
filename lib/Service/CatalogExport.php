@@ -71,11 +71,6 @@ class CatalogExport
 
             }
 
-            echo "<pre>";
-            print_r($count);
-            echo "</pre>";
-            die();
-
             $this->sendDates([
                 'SECTIONS' => $sections,
                 'PRODUCTS' => $products
