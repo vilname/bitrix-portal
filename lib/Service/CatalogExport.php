@@ -27,7 +27,7 @@ class CatalogExport
             return $section['ID'];
         }, $sections);
 
-        $count = ProductTable::GetCount();
+        $count = ProductTable::GetCount(['IBLOCK_ELEMENT.IBLOCK_SECTION_ID' => $sectionsIds]);
 
         $chunkSize = 2000;
         $offset = 0;
@@ -70,6 +70,11 @@ class CatalogExport
                 $products[] = $product;
 
             }
+
+            echo "<pre>";
+            print_r($count);
+            echo "</pre>";
+            die();
 
             $this->sendDates([
                 'SECTIONS' => $sections,
